@@ -1,0 +1,34 @@
+body {
+	margin:20px; padding:30px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	}
+	
+#sidemenu {
+	float:left;
+	width:150px;
+	margin:10px;
+	text-align:left;
+	padding:10px;
+	border:1px dashed #333;
+	background-color:#eee;
+	}
+
+#dottedContentBox {
+	float:left;
+	margin:10px;
+	text-align:left;
+	padding:10px;
+	border:1px dashed #333;
+	background-color:#eee;
+}
+
+
+a {
+  color: #00b7ff;
+}
+
+
+p#light {
+	font-weight: lighter;
+	color: grey;
+}
