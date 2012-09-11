@@ -10,7 +10,8 @@ exports.reload = function(req, res){
 
   	  console.log("stdout: " + stdout);
   	  console.log("stderr: " + stderr);
-	  res.redirect('/');
+
+	  res.render('reload',{title: 'Reloading from github.com/isszul/mysite'});
 
   });
 
