@@ -36,6 +36,7 @@ app.all('/blog', blog.blog);
 app.all('/vimrc', vimrc.vimrc);
 app.all('/reload', reload.reload);
 app.all('/viewlog', viewlog.viewlog);
+app.all('/clearlog', viewlog.clearlog);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

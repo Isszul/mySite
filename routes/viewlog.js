@@ -28,7 +28,7 @@ exports.clearlog = function(req, res){
 
 	fs.unlink('nohup.out', function (err) {
   		if (err) throw err;
-  		console.log('successfully deleted /tmp/hello');
+  		console.log('successfully deleted nohup.out');
 	});
 
 	res.render('viewlog', { 
