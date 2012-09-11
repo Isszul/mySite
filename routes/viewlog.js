@@ -9,9 +9,17 @@ exports.viewlog = function(req, res){
 
 	fs.readFile( 'nohup.out', function (err, data) {
 
+	  if (data == null)
+	  {
+	  	datafile = "Empty"
+	  }
+	  else
+	  {
+	  	datafile = data.toString();
+	  }
 	  res.render('viewlog', { 
   		title: 'Current nohup',
-  		data: data
+  		data: datafile
   	   });
 
 	});
@@ -29,7 +37,7 @@ exports.clearlog = function(req, res){
 
 	res.render('viewlog', { 
 		title: 'Current nohup',
-		data: data
+		data: ""
 	});
 
 };
