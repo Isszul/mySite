@@ -2,7 +2,7 @@
  * Kills the app (allows the bash script to cicle and reload)
  */
 
-var process = requires('process');
+var process = require('process');
 
 exports.runUpdate = function(req, res){
 
