@@ -2,4 +2,13 @@ extends layout
 
 block content
   h1= title
-  p Blog Content goes here.
+  p.light A random collection of thoughts. 
+  p.light Going to be full of stuff I think is interesting.
+
+
+  each blogEntry in blogEntries
+    div.blogEntry
+        p.blogTitle !{blogEntry.title}
+        p.blogText !{blogEntry.text}
+        p.datetime !{blogEntry.submitted}
+

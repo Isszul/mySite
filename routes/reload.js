@@ -6,6 +6,7 @@
 exports.reload = function(req, res){
 
   res.render('reload', { 
+	sidemenulinks: res.app.settings['sidemenulinks'],  	
   	title: 'Reloading from GitHub'
   });
 

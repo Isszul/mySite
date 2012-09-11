@@ -13,6 +13,7 @@ exports.vimrc = function(req, res){
 	  }
 
 	  res.render('vimrc', { 
+		sidemenulinks: res.app.settings['sidemenulinks'],	  	
   		title: 'My vimrc settings',
   		data: data
   	   });

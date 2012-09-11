@@ -38,7 +38,7 @@ a {
 }
 
 
-p#light {
+p.light {
 	font-weight: lighter;
 	color: #AAA;
 }
@@ -54,4 +54,32 @@ div#mainContentPane {
   	width: 700px ;
   	height: 100%;
 
+}
+
+
+div.blogEntry {
+	margin:10px;
+	text-align:left;
+	padding:10px;
+	border:1px dashed #333;
+	background-color:#eee;
+}
+
+
+p.blogTitle {
+	font-weight: bold;
+	color: #000;
+	background-color: #DDD;
+	margin: 5px;
+}
+
+p.blogText {
+	font-weight: lighter;
+	color: #222;
+}
+
+p.datetime {
+	font-weight: lighter;
+	color: #222;	
+	text-align: right;
 }

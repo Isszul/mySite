@@ -14,10 +14,26 @@ var express = require('express')
 
 var app = express();
 
+
+var sidemenulinks =  [
+  {name: 'Main Page', href: '/', routingFunc: routes.index},
+  {name: 'My Blog', href: '/blog', routingFunc: blog.blog},
+  {name: 'Vimrc', href: '/vimrc', routingFunc: vimrc.vimrc},
+  {name: 'reload from git', href: '/reload', routingFunc: reload.reload},
+  {name: 'View Log', href: '/viewlog', routingFunc: viewlog.viewlog},
+];
+
+
+var additionallinks = [
+  {name: 'Clear Log', href: '/clearlog', routingFunc:  viewlog.clearlog},
+]
+
+
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
+  app.set('sidemenulinks', sidemenulinks);
   app.use(express.favicon());
   app.use(express.logger('dev'));
   app.use(express.bodyParser());
@@ -31,12 +47,14 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.all('/', routes.index);
-app.all('/blog', blog.blog);
-app.all('/vimrc', vimrc.vimrc);
-app.all('/reload', reload.reload);
-app.all('/viewlog', viewlog.viewlog);
-app.all('/clearlog', viewlog.clearlog);
+
+for (var i = 0; i < sidemenulinks.length; i++) {
+  app.all(sidemenulinks[i].href, sidemenulinks[i].routingFunc);
+};
+
+for (var i = 0; i < additionallinks.length; i++) {
+  app.all(additionallinks[i].href, additionallinks[i].routingFunc);
+};
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

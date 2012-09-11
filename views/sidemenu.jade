@@ -1,13 +1,11 @@
 block sidemenu
 
-	- var links =  [{name: 'Main Page', href: '/'},{name: 'My Blog', href: 'blog'},{name: 'Vimrc', href: 'vimrc'}, {name: 'reload from git', href: 'reload'}, {name: 'View Log', href: 'viewlog'}];
-
 	div#sidemenu
 		h3 Alex Thomas
 		p Software Engineer
-		p#light C, Python, Java, .Net, NodeJs, Vim Hobbist, Gamer, Linux Kernel Tinkerer 
+		p.light C, Python, Java, .Net, NodeJs, Vim Hobbist, Gamer, Linux Kernel Tinkerer 
 
-		ul#menu
-			for link in links
-				li#menu: a(href="#{link.href}", title="#{link.name}") #{link.name}
+		ul.menu
+			- each link in sidemenulinks
+				li.menu: a(href="#{link.href}", title="#{link.name}") !{link.name}
 
