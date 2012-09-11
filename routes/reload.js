@@ -8,8 +8,8 @@ exports.reload = function(req, res){
 
   exec("git pull --update", function(error, stdout, stderr){
 
-  	  console.log(stdout);
-  	  console.log(stderr);
+  	  console.log("stdout: " + stdout);
+  	  console.log("stderr: " + stderr);
 	  res.redirect('/');
 
   });
