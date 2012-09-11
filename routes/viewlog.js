@@ -19,7 +19,7 @@ exports.viewlog = function(req, res){
 	  }
 	  res.render('viewlog', { 
 		sidemenulinks: res.app.settings['sidemenulinks'],	  	
-  		title: 'Current nohup',
+  		title: 'View Log',
   		data: datafile
   	   });
 

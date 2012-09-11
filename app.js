@@ -19,8 +19,8 @@ var sidemenulinks =  [
   {name: 'Main Page', href: '/', routingFunc: routes.index},
   {name: 'My Blog', href: '/blog', routingFunc: blog.blog},
   {name: 'Vimrc', href: '/vimrc', routingFunc: vimrc.vimrc},
-  {name: 'reload from git', href: '/reload', routingFunc: reload.reload},
   {name: 'View Log', href: '/viewlog', routingFunc: viewlog.viewlog},
+  {name: 'Reload from git', href: '/reload', routingFunc: reload.reload},
 ];
 
 
