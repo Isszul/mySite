@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Login
+
+  form(action='/login', method='post')
+    div#usernamediv
+        fieldset
+            label(for='username') username: 
+                input(id='username', type='text', value='', name='username')
+    div#passworddiv
+        fieldset
+            label(for='password') password: 
+                input(id='password', type='password', value='', name='password')      
+    div#submit
+        input(type='submit', value='Login')          
