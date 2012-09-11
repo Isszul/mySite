@@ -35,9 +35,6 @@ exports.clearlog = function(req, res){
   		console.log('successfully deleted nohup.out');
 	});
 
-	res.render('viewlog', { 
-		title: 'Current nohup',
-		data: ""
-	});
+	res.redirect('viewlog');
 
 };
