@@ -3,7 +3,7 @@
 # Update and restart script
 
 
-git pull --update -y
+git pull --update -f
 
 killall node
 
