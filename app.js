@@ -7,7 +7,7 @@ var express = require('express')
   , routes = require('./routes')
   , blog = require('./routes/blog')
   , vimrc = require('./routes/vimrc')
-  , runUpdate = require('./runUpdate')  
+  , reload = require('./routes/reload')  
   , http = require('http')
   , path = require('path');
 
@@ -33,7 +33,7 @@ app.configure('development', function(){
 app.all('/', routes.index);
 app.all('/blog', blog.blog);
 app.all('/vimrc', vimrc.vimrc);
-app.all('/update', runUpdate.runUpdate);
+app.all('/reload', reload.reload);
 
 
 http.createServer(app).listen(app.get('port'), function(){
