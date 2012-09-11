@@ -8,6 +8,7 @@ var express = require('express')
   , blog = require('./routes/blog')
   , vimrc = require('./routes/vimrc')
   , reload = require('./routes/reload')  
+  , viewlog = require('./routes/viewlog')  
   , http = require('http')
   , path = require('path');
 
@@ -34,7 +35,7 @@ app.all('/', routes.index);
 app.all('/blog', blog.blog);
 app.all('/vimrc', vimrc.vimrc);
 app.all('/reload', reload.reload);
-
+app.all('/viewlog', viewlog.viewlog);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
