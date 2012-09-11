@@ -21,3 +21,19 @@ exports.viewlog = function(req, res){
 
 
 };
+
+
+
+exports.clearlog = function(req, res){
+
+	fs.unlink('nohup.out', function (err) {
+  		if (err) throw err;
+  		console.log('successfully deleted /tmp/hello');
+	});
+
+	res.render('viewlog', { 
+		title: 'Current nohup',
+		data: data
+	});
+
+};
