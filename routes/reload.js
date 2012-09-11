@@ -8,6 +8,8 @@ exports.reload = function(req, res){
 
   exec("git pull --update", function(error, stdout, stderr){
 
+  	  console.log(stdout);
+  	  console.log(stderr);
 	  res.render('reload', { 
 		sidemenulinks: res.app.settings['sidemenulinks'],  	
 	  	title: 'Reloading from GitHub'
