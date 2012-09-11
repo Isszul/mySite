@@ -31,7 +31,7 @@ exports.viewlog = function(req, res){
 
 exports.clearlog = function(req, res){
 
-	fs.unlink('nohup.out', function (err) {
+	fs.writeFile('nohup.out', '', function (err) {
   		console.log('successfully deleted nohup.out');
 	});
 
