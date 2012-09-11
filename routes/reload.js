@@ -1,15 +1,18 @@
 /*
- * Kills the app (allows the bash script to cicle and reload)
+ * Updates the app. nodemon will reload for us.
  */
 
+var exec = require('child_process').exec;
 
 exports.reload = function(req, res){
 
-  res.render('reload', { 
-	sidemenulinks: res.app.settings['sidemenulinks'],  	
-  	title: 'Reloading from GitHub'
-  });
+  exec("git pull --update", function(error, stdout, stderr){
 
-  process.exit(1);
+	  res.render('reload', { 
+		sidemenulinks: res.app.settings['sidemenulinks'],  	
+	  	title: 'Reloading from GitHub'
+	  });
+
+  });
 
 }
