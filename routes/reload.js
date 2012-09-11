@@ -10,10 +10,7 @@ exports.reload = function(req, res){
 
   	  console.log(stdout);
   	  console.log(stderr);
-	  res.render('reload', { 
-		sidemenulinks: res.app.settings['sidemenulinks'],  	
-	  	title: 'Reloading from GitHub'
-	  });
+	  res.redirect('/');
 
   });
 
