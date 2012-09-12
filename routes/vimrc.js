@@ -2,7 +2,9 @@
  * GET vimrc page.
  */
 
-var fs = require('fs');
+var fs = require('fs')
+, linking = require('./linking');
+
 
 exports.vimrc = function(req, res){
 
@@ -13,7 +15,7 @@ exports.vimrc = function(req, res){
 	  }
 
 	  res.render('vimrc', { 
-		sidemenulinks: res.app.settings['sidemenulinks'],	  	
+	    sidemenulinks: linking.getSideMenuLinks(req),	  	
   		title: 'My vimrc settings',
   		data: data
   	   });

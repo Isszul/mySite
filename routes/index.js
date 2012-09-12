@@ -1,15 +1,14 @@
 /*
  * GET home page.
  */
+ 
+var linking = require('./linking');
 
 exports.index = function(req, res){
 
-  if (req.session.loggedin == true) {
-  	console.log("loggedin")
-  };
   
   res.render('index', { 
-	sidemenulinks: res.app.settings['sidemenulinks'],  	
+    sidemenulinks: linking.getSideMenuLinks(req),
   	title: 'Main Page'
   });
 

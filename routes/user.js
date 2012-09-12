@@ -1,5 +1,6 @@
 // User functions
 
+var linking = require('./linking');
 
 exports.login = function(req, res){
 
@@ -9,9 +10,18 @@ exports.login = function(req, res){
 
 
 	res.render('login', { 
-		sidemenulinks: res.app.settings['sidemenulinks'],	  	
+    	sidemenulinks: linking.getSideMenuLinks(req),  	
 		title: 'Login',
 	});
 
+
+};
+
+
+exports.logout = function(req, res){
+
+	req.session.loggedin=false;
+
+	res.redirect('/');
 
 };

@@ -2,7 +2,8 @@
  * GET vimrc page.
  */
 
-var fs = require('fs');
+var fs = require('fs')
+, linking = require('./linking');
 
 exports.viewlog = function(req, res){
 
@@ -18,7 +19,7 @@ exports.viewlog = function(req, res){
 	  	datafile = data.toString();
 	  }
 	  res.render('viewlog', { 
-		sidemenulinks: res.app.settings['sidemenulinks'],	  	
+    	sidemenulinks: linking.getSideMenuLinks(req),	  	
   		title: 'View Log',
   		data: datafile
   	   });
