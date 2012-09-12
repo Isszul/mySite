@@ -14,9 +14,9 @@ exports.vimrc = function(req, res){
 	    throw err; 
 	  }
 
-	  res.render('vimrc', { 
+	  res.render('viewfile', { 
 	    sidemenulinks: linking.getSideMenuLinks(req),	  	
-  		title: 'My vimrc settings',
+  		title: 'Vimrc settings file. Borrowed from Derek Wyatt! (derekwyatt.org)',
   		data: data
   	   });
 

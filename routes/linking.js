@@ -6,7 +6,8 @@
   , blog = require('./blog')
   , vimrc = require('./vimrc')
   , reload = require('./reload')  
-  , user = require('./user')    
+  , user = require('./user')   
+  , utils = require('./utils')   
   , viewlog = require('./viewlog');
 
 var sidemenulinks =  [
@@ -18,6 +19,7 @@ var sidemenulinks =  [
 
 var onlyAdminLinks = [
   {name: 'View Log', href: '/viewlog', routingFunc: viewlog.viewlog},
+  {name: 'View netstat', href: '/netstat', routingFunc: utils.netstat},  
   {name: 'Reload from git', href: '/reload', routingFunc: reload.reload},
   {name: 'Logout', href: '/logout', routingFunc: user.logout},
 ];
