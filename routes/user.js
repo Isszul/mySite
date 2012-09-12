@@ -6,6 +6,8 @@ exports.login = function(req, res){
 
 	if(req.body.username=='user' && req.body.password=='pass'){
 		req.session.loggedin=true;
+		res.redirect('/');
+		return;
 	}
 
 	res.render('login', { 
