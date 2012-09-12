@@ -8,7 +8,6 @@ exports.login = function(req, res){
 		req.session.loggedin=true;
 	}
 
-
 	res.render('login', { 
     	sidemenulinks: linking.getSideMenuLinks(req),  	
 		title: 'Login',
@@ -20,7 +19,9 @@ exports.login = function(req, res){
 
 exports.logout = function(req, res){
 
-	req.session.loggedin=false;
+	if(req.session.loggedin==true){
+		req.session.loggedin=false;
+	}
 
 	res.redirect('/');
 
