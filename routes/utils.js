@@ -20,4 +20,22 @@ exports.netstat = function(req, res){
 
   });
 
-}
+};
+
+
+exports.dfminush = function(req, res){
+
+  exec("df -h", function(error, stdout, stderr){
+
+  	  console.log("stdout: " + stdout);
+  	  console.log("stderr: " + stderr);
+
+	  res.render('viewfile', { 
+	    sidemenulinks: linking.getSideMenuLinks(req),	  	
+  		title: 'Disk report',
+  		data: "stdout: " + stdout + "stderr: " + stderr
+  	   });
+
+  });
+
+};
