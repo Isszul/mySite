@@ -44,7 +44,7 @@ exports.dfminush = function(req, res){
 
 exports.top = function(req, res){
 
-  exec("top -n 1", function(error, stdout, stderr){
+  exec("top -n 1 > top.out && cat top.out", function(error, stdout, stderr){
 
       console.log("stdout: " + stdout);
       console.log("stderr: " + stderr);
