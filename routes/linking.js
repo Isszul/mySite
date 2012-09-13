@@ -20,7 +20,8 @@ var sidemenulinks =  [
 var onlyAdminLinks = [
   {name: 'View Log', href: '/viewlog', routingFunc: viewlog.viewlog},
   {name: 'View netstat', href: '/netstat', routingFunc: utils.netstat},  
-  {name: 'View Disk Report', href: '/diskreport', routingFunc: utils.dfminush},   
+  {name: 'View Disk Report', href: '/diskreport', routingFunc: utils.dfminush},  
+  {name: 'View Top', href: '/top', routingFunc: utils.top},      
   {name: 'Reload from git', href: '/reload', routingFunc: reload.reload},
   {name: 'Logout', href: '/logout', routingFunc: user.logout},
 ];
