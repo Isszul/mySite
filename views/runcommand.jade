@@ -1,0 +1,32 @@
+extends layout
+
+
+block scripts
+
+  script(src="/nowjs/now.js")
+
+  script(type="text/javascript", src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js")
+
+  script
+    $(document).ready(function(){
+
+    now.receiveCommand = function(message){
+      $("#messages").append("<br /><br />" + message);
+    }
+
+    $("#send-button").click(function(){
+      now.runConsoleCommand($("#text-input").val());
+      $("#text-input").val("");
+    });
+
+
+    });
+
+block content
+  h1= title
+
+  input(type="text", id="text-input")
+
+  input(type="button", value="Send", id="send-button")
+
+  div(id="messages")

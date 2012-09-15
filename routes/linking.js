@@ -23,7 +23,7 @@ var onlyAdminLinks = [
   {name: 'View Log', href: '/viewlog', routingFunc: viewlog.viewlog},
   {name: 'View netstat', href: '/netstat', routingFunc: utils.netstat},  
   {name: 'View Disk Report', href: '/diskreport', routingFunc: utils.dfminush},  
-  {name: 'View Top', href: '/top', routingFunc: utils.top},      
+  {name: 'Run command', href: '/runCommand', routingFunc: utils.runCommand},      
   {name: 'Reload from git', href: '/reload', routingFunc: reload.reload},
   {name: 'Logout', href: '/logout', routingFunc: user.logout},
 ];
