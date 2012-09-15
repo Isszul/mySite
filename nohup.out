@@ -1,0 +1,467 @@
+[90mGET /clearlog [36m302 [90m18ms - 108[0m
+successfully deleted nohup.out
+[90mGET /stylesheets/style.css [36m304 [90m13ms[0m
+[90mGET / [36m304 [90m148ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m15ms[0m
+[90mGET /images/sam.jpg [36m304 [90m12ms[0m
+[90mGET /login [32m200 [90m165ms - 1.43kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+stdout: Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 RaspberryPi.home:3000   213.205.232.112:10001   ESTABLISHED
+tcp        0      0 RaspberryPi.home:3000   213.205.232.112:10002   ESTABLISHED
+
+stderr: 
+[90mGET /netstat [32m200 [90m291ms - 1.36kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m13ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m13ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m21ms[0m
+[90mGET /apple-touch-icon-precomposed.png [33m404 [90m42ms[0m
+[90mGET /apple-touch-icon.png [33m404 [90m16ms[0m
+[90mGET / [32m200 [90m246ms - 790[0m
+[90mGET /stylesheets/style.css [32m200 [90m55ms - 2.67kb[0m
+[90mGET /images/sam.jpg [32m200 [90m500ms - 38.89kb[0m
+[90mGET /blog [32m200 [90m156ms - 1.16kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m19ms[0m
+[90mGET /vimrc [32m200 [90m118ms - 5.93kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+[90mGET /login [32m200 [90m356ms - 1.05kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m30ms[0m
+[90mPOST /login [32m200 [90m123ms - 1.05kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m18ms[0m
+[90mPOST /login [36m302 [90m16ms - 94[0m
+[90mGET / [32m200 [90m81ms - 1.15kb[0m
+[90mGET /images/sam.jpg [36m304 [90m12ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+stdout: Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 RaspberryPi.home:3000   198.175.152.210:38925   ESTABLISHED
+tcp        0      0 RaspberryPi.home:3000   198.175.152.210:38914   ESTABLISHED
+tcp        0      0 RaspberryPi.home:3000   198.175.152.210:40043   ESTABLISHED
+tcp        0      0 RaspberryPi.home:3000   198.175.152.210:38924   ESTABLISHED
+
+stderr: 
+[90mGET /netstat [32m200 [90m430ms - 1.52kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m13ms[0m
+stdout: Filesystem      Size  Used Avail Use% Mounted on
+rootfs          3.7G  1.9G  1.6G  55% /
+/dev/root       3.7G  1.9G  1.6G  55% /
+tmpfs            24M  236K   23M   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            47M  8.0K   47M   1% /tmp
+tmpfs            10M     0   10M   0% /dev
+tmpfs            47M     0   47M   0% /run/shm
+/dev/mmcblk0p1   56M   36M   21M  64% /boot
+/dev/sda1       299G  238G   61G  80% /media/bigBlob
+
+stderr: 
+[90mGET /diskreport [32m200 [90m288ms - 1.53kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m13ms[0m
+stdout: Already up-to-date.
+
+stderr: 
+[90mGET /reload [32m200 [90m3436ms - 375[0m
+[90mGET /stylesheets/style.css [36m304 [90m33ms[0m
+[90mGET / [32m200 [90m156ms - 1.15kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m16ms[0m
+[90mGET /images/sam.jpg [36m304 [90m13ms[0m
+[90mGET / [32m200 [90m255ms - 1.15kb[0m
+stdout: Filesystem      Size  Used Avail Use% Mounted on
+rootfs          3.7G  1.9G  1.6G  55% /
+/dev/root       3.7G  1.9G  1.6G  55% /
+tmpfs            24M  236K   23M   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            47M  8.0K   47M   1% /tmp
+tmpfs            10M     0   10M   0% /dev
+tmpfs            47M     0   47M   0% /run/shm
+/dev/mmcblk0p1   56M   36M   21M  64% /boot
+/dev/sda1       299G  238G   61G  80% /media/bigBlob
+
+stderr: 
+[90mGET /diskreport [32m200 [90m358ms - 1.53kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m27ms[0m
+stdout: Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 RaspberryPi.home:3000   198.175.152.210:15093   ESTABLISHED
+
+stderr: 
+[90mGET /netstat [32m200 [90m408ms - 1.28kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m17ms[0m
+stdout: Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 RaspberryPi.home:3000   198.175.152.210:15093   ESTABLISHED
+
+stderr: 
+[90mGET /netstat [32m200 [90m215ms - 1.28kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m13ms[0m
+stdout: Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 RaspberryPi.home:3000   198.175.152.210:15093   ESTABLISHED
+
+stderr: 
+[90mGET /netstat [32m200 [90m222ms - 1.28kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+stdout: Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 RaspberryPi.home:3000   198.175.152.210:15093   ESTABLISHED
+
+stderr: 
+[90mGET /netstat [32m200 [90m301ms - 1.28kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m13ms[0m
+stdout: Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 RaspberryPi.home:3000   198.175.152.210:15093   ESTABLISHED
+
+stderr: 
+[90mGET /netstat [32m200 [90m213ms - 1.28kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+[90mGET /viewlog [32m200 [90m131ms - 6.45kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m13ms[0m
+[90mGET / [32m200 [90m160ms - 1.15kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m24ms[0m
+[90mGET /images/sam.jpg [36m304 [90m12ms[0m
+[90mGET /blog [32m200 [90m161ms - 1.54kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+[90mGET /vimrc [32m200 [90m234ms - 6.31kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m27ms[0m
+[90mGET / [32m200 [90m252ms - 790[0m
+[90mGET /stylesheets/style.css [36m304 [90m32ms[0m
+[90mGET /images/sam.jpg [36m304 [90m14ms[0m
+[90mGET / [32m200 [90m251ms - 790[0m
+[90mGET /stylesheets/style.css [36m304 [90m33ms[0m
+[90mGET /images/sam.jpg [36m304 [90m13ms[0m
+[90mGET / [32m200 [90m253ms - 790[0m
+[90mGET /stylesheets/style.css [36m304 [90m33ms[0m
+[90mGET /images/sam.jpg [36m304 [90m14ms[0m
+[90mGET /blog [32m200 [90m155ms - 1.16kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m13ms[0m
+[90mGET /vimrc [32m200 [90m118ms - 5.93kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m13ms[0m
+[90mGET /blog [36m304 [90m272ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m29ms[0m
+[90mGET / [32m200 [90m153ms - 790[0m
+[90mGET /stylesheets/style.css [36m304 [90m25ms[0m
+[90mGET /images/sam.jpg [36m304 [90m14ms[0m
+[90mHEAD / [32m200 [90m247ms - 790[0m
+[90mGET /application/configs/application.ini [33m404 [90m41ms[0m
+[90mGET /application/configs/database.default.ini [33m404 [90m15ms[0m
+[90mGET /configs/engine.ini [33m404 [90m10ms[0m
+[90mGET /configs/application.ini [33m404 [90m10ms[0m
+[90mGET /configs/db.ini [33m404 [90m10ms[0m
+[90mGET /application.ini [33m404 [90m10ms[0m
+[90mGET /application/configs/db.ini [33m404 [90m9ms[0m
+[90mGET /ogpc-reporting/application/configs/application.ini [33m404 [90m9ms[0m
+[90mGET /pdforms/application/configs/application.ini [33m404 [90m9ms[0m
+[90mGET / [32m200 [90m257ms - 790[0m
+[90mGET /stylesheets/style.css [36m304 [90m34ms[0m
+[90mGET /images/sam.jpg [36m304 [90m14ms[0m
+[90mGET /login [36m304 [90m165ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+[90mPOST /login [36m302 [90m28ms - 96[0m
+[90mGET / [32m200 [90m80ms - 1.15kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+[90mGET /images/sam.jpg [36m304 [90m11ms[0m
+stdout: Updating c165ded..8679149
+Fast-forward
+ routes/linking.js |    3 ++-
+ routes/utils.js   |   21 ++++++++++++++++++++-
+ 2 files changed, 22 insertions(+), 2 deletions(-)
+
+stderr: From https://github.com/Isszul/mySite
+   c165ded..8679149  master     -> origin/master
+
+[90mGET /reload [32m200 [90m8524ms - 375[0m
+[90mGET /stylesheets/style.css [36m304 [90m13ms[0m
+13 Sep 17:37:48 - [nodemon] restarting due to changes...
+13 Sep 17:37:48 - [nodemon] /opt/mySite/routes/utils.js
+
+
+13 Sep 17:37:48 - [32m[nodemon] starting `node app.js`[0m
+Express server listening on port 3000
+[90mGET / [32m200 [90m1045ms - 790[0m
+[90mGET /images/sam.jpg [36m304 [90m89ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m158ms[0m
+[90mGET /login [36m304 [90m189ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m24ms[0m
+[90mPOST /login [36m302 [90m56ms - 96[0m
+[90mGET / [32m200 [90m85ms - 1.21kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+[90mGET /images/sam.jpg [36m304 [90m12ms[0m
+stdout: 
+stderr: 	top: failed tty get
+
+[90mGET /top [32m200 [90m203ms - 1.17kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+stdout: Updating 8679149..c7c2c3d
+Fast-forward
+ routes/utils.js |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+stderr: From https://github.com/Isszul/mySite
+   8679149..c7c2c3d  master     -> origin/master
+
+[90mGET /reload [32m200 [90m5481ms - 375[0m
+13 Sep 17:39:27 - [nodemon] restarting due to changes...
+13 Sep 17:39:27 - [nodemon] /opt/mySite/routes/utils.js
+
+
+[90mGET /stylesheets/style.css [36m304 [90m60ms[0m
+13 Sep 17:39:27 - [32m[nodemon] starting `node app.js`[0m
+Express server listening on port 3000
+[90mGET / [32m200 [90m1019ms - 790[0m
+[90mGET /images/sam.jpg [36m304 [90m140ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m129ms[0m
+[90mGET /login [36m304 [90m185ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m21ms[0m
+[90mPOST /login [36m302 [90m55ms - 96[0m
+[90mGET / [32m200 [90m84ms - 1.21kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+[90mGET /images/sam.jpg [36m304 [90m12ms[0m
+stdout: 
+stderr: 	top: failed tty get
+
+[90mGET /top [36m304 [90m204ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+stdout: 
+stderr: 	top: failed tty get
+
+[90mGET /top [36m304 [90m151ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+stdout: 
+stderr: 	top: failed tty get
+
+[90mGET /top [36m304 [90m153ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m13ms[0m
+stdout: 
+stderr: 	top: failed tty get
+
+[90mGET /top [36m304 [90m135ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m13ms[0m
+stdout: Filesystem      Size  Used Avail Use% Mounted on
+rootfs          3.7G  1.9G  1.6G  55% /
+/dev/root       3.7G  1.9G  1.6G  55% /
+tmpfs            24M  240K   23M   2% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            47M  392K   46M   1% /tmp
+tmpfs            10M     0   10M   0% /dev
+tmpfs            47M     0   47M   0% /run/shm
+/dev/mmcblk0p1   56M   36M   21M  64% /boot
+/dev/sda1       299G  238G   61G  80% /media/bigBlob
+
+stderr: 
+[90mGET /diskreport [32m200 [90m5828ms - 1.59kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m53ms[0m
+[90mGET /robots.txt [33m404 [90m51ms[0m
+[90mGET / [32m200 [90m272ms - 790[0m
+[90mGET /login [32m200 [90m304ms - 1.05kb[0m
+[90mGET /robots.txt [33m404 [90m49ms[0m
+[90mGET /images/sam.jpg [32m200 [90m508ms - 38.89kb[0m
+[90mGET / [32m200 [90m254ms - 790[0m
+[90mGET / [32m200 [90m267ms - 790[0m
+[90mGET / [32m200 [90m91ms - 790[0m
+[90mGET /stylesheets/style.css [36m304 [90m39ms[0m
+[90mGET /images/sam.jpg [36m304 [90m16ms[0m
+[90mGET /blog [32m200 [90m162ms - 1.16kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+[90mGET /vimrc [32m200 [90m295ms - 5.93kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m30ms[0m
+[90mHEAD / [32m200 [90m370ms - 790[0m
+[90mHEAD / [32m200 [90m254ms - 790[0m
+[90mGET /stylesheets/style.css [36m304 [90m50ms[0m
+[90mGET / [32m200 [90m262ms - 790[0m
+[90mGET /stylesheets/style.css [32m200 [90m81ms - 2.67kb[0m
+[90mGET /images/sam.jpg [32m200 [90m53ms - 38.89kb[0m
+[90mGET /login [32m200 [90m171ms - 1.05kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m19ms[0m
+[90mPOST /login [36m302 [90m34ms - 96[0m
+[90mGET / [32m200 [90m94ms - 1.21kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m15ms[0m
+[90mGET /images/sam.jpg [36m304 [90m12ms[0m
+stdout: Already up-to-date.
+
+stderr: 
+[90mGET /reload [32m200 [90m3758ms - 375[0m
+[90mGET /stylesheets/style.css [36m304 [90m13ms[0m
+[90mGET / [36m304 [90m77ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m14ms[0m
+[90mGET /images/sam.jpg [36m304 [90m11ms[0m
+stdout: Filesystem      Size  Used Avail Use% Mounted on
+rootfs          3.7G  2.0G  1.5G  57% /
+/dev/root       3.7G  2.0G  1.5G  57% /
+tmpfs            24M  240K   23M   2% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            47M  2.5M   44M   6% /tmp
+tmpfs            10M     0   10M   0% /dev
+tmpfs            47M     0   47M   0% /run/shm
+/dev/mmcblk0p1   56M   36M   21M  64% /boot
+/dev/sda1       299G  238G   61G  80% /media/bigBlob
+
+stderr: 
+[90mGET /diskreport [32m200 [90m11027ms - 1.59kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m32ms[0m
+stdout: Filesystem      Size  Used Avail Use% Mounted on
+rootfs          3.7G  2.0G  1.5G  57% /
+/dev/root       3.7G  2.0G  1.5G  57% /
+tmpfs            24M  240K   23M   2% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            47M  2.5M   44M   6% /tmp
+tmpfs            10M     0   10M   0% /dev
+tmpfs            47M     0   47M   0% /run/shm
+/dev/mmcblk0p1   56M   36M   21M  64% /boot
+/dev/sda1       299G  238G   61G  80% /media/bigBlob
+
+stderr: 
+[90mGET /diskreport [36m304 [90m324ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m17ms[0m
+stdout: Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 RaspberryPi.home:39428  github.com:https        TIME_WAIT  
+tcp        0      0 RaspberryPi.home:ssh    Alex-PC.home:51008      ESTABLISHED
+tcp        0      0 RaspberryPi.home:3000   Alex-PC.home:51382      ESTABLISHED
+tcp        0      0 RaspberryPi.home:3000   Alex-PC.home:51383      ESTABLISHED
+
+stderr: 
+[90mGET /netstat [32m200 [90m476ms - 1.58kb[0m
+[90mGET /stylesheets/style.css [36m304 [90m26ms[0m
+stdout: Updating c7c2c3d..94661bb
+
+stderr: From https://github.com/Isszul/mySite
+   c7c2c3d..94661bb  master     -> origin/master
+error: The following untracked working tree files would be overwritten by merge:
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/.npmignore
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/LICENSE
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/Makefile
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/README.md
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/doc/index.html
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/examples/basic.fallback.js
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/examples/basic.js
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/index.js
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/lib/server.js
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/package.json
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/tests/ssl/ssl.crt
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/tests/ssl/ssl.private.key
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/tests/unit.test.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/.npmignore
+	node_modules/now/node_modules/socket.io/node_modules/redis/README.md
+	node_modules/now/node_modules/socket.io/node_modules/redis/changelog.md
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/auth.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/backpressure_drain.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/eval.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/extend.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/file.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/mget.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/monitor.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/multi.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/multi2.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/psubscribe.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/pub_sub.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/simple.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/sort.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/subqueries.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/subquery.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/unix_socket.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/web_server.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/generate_commands.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/index.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/lib/commands.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/lib/parser/hiredis.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/lib/parser/javascript.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/lib/queue.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/lib/to_array.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/lib/util.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/multi_bench.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/package.json
+	node_modules/now/node_modules/socket.io/node_modules/redis/test.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/tests/buffer_bench.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/tests/hiredis_parser.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/tests/re_sub_test.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/tests/reconnect_test.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/tests/stress/codec.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/tests/stress/pubsub/pub.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/tests/stre
+Aborting
+
+[90mGET /reload [32m200 [90m12525ms - 375[0m
+[90mGET /stylesheets/style.css [36m304 [90m33ms[0m
+[90mGET / [36m304 [90m168ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m27ms[0m
+[90mGET /images/sam.jpg [36m304 [90m14ms[0m
+stdout: Updating c7c2c3d..94661bb
+
+stderr: error: The following untracked working tree files would be overwritten by merge:
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/.npmignore
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/LICENSE
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/Makefile
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/README.md
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/doc/index.html
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/examples/basic.fallback.js
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/examples/basic.js
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/index.js
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/lib/server.js
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/package.json
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/tests/ssl/ssl.crt
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/tests/ssl/ssl.private.key
+	node_modules/now/node_modules/socket.io/node_modules/policyfile/tests/unit.test.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/.npmignore
+	node_modules/now/node_modules/socket.io/node_modules/redis/README.md
+	node_modules/now/node_modules/socket.io/node_modules/redis/changelog.md
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/auth.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/backpressure_drain.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/eval.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/extend.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/file.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/mget.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/monitor.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/multi.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/multi2.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/psubscribe.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/pub_sub.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/simple.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/sort.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/subqueries.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/subquery.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/unix_socket.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/examples/web_server.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/generate_commands.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/index.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/lib/commands.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/lib/parser/hiredis.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/lib/parser/javascript.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/lib/queue.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/lib/to_array.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/lib/util.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/multi_bench.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/package.json
+	node_modules/now/node_modules/socket.io/node_modules/redis/test.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/tests/buffer_bench.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/tests/hiredis_parser.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/tests/re_sub_test.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/tests/reconnect_test.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/tests/stress/codec.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/tests/stress/pubsub/pub.js
+	node_modules/now/node_modules/socket.io/node_modules/redis/tests/stre
+Aborting
+
+[90mGET /reload [32m200 [90m3083ms - 375[0m
+[90mGET /stylesheets/style.css [36m304 [90m28ms[0m
+[90mGET / [36m304 [90m140ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m16ms[0m
+[90mGET /images/sam.jpg [36m304 [90m12ms[0m
+15 Sep 16:05:25 - [nodemon] restarting due to changes...
+15 Sep 16:05:25 - [nodemon] /opt/mySite/app.js
+
+
+15 Sep 16:05:25 - [32m[nodemon] starting `node app.js`[0m
+15 Sep 16:05:26 - [nodemon] restarting due to changes...
+15 Sep 16:05:26 - [nodemon] /opt/mySite/routes/linking.js
+
+
+15 Sep 16:05:26 - [32m[nodemon] starting `node app.js`[0m
+15 Sep 16:05:29 - [1;31m[nodemon] app crashed - waiting for file changes before starting...[0m
+15 Sep 16:07:53 - [nodemon] exiting
+15 Sep 16:07:56 - [nodemon] v0.6.23
+15 Sep 16:07:56 - [32m[nodemon] watching: /opt/mySite/routes[0m
+15 Sep 16:07:56 - [32m[nodemon] watching: /opt/mySite[0m
+15 Sep 16:07:56 - [32m[nodemon] starting `node app.js`[0m
+15 Sep 16:07:58 - [1;31m[nodemon] app crashed - waiting for file changes before starting...[0m
+15 Sep 16:08:02 - [nodemon] exiting
