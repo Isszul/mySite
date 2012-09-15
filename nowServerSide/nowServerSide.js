@@ -8,6 +8,7 @@ exports.setupServerSideNowFunctions = function(app) {
 	var everyone = nowjs.initialize(app);
 
 	everyone.now.distributeMessage = function(message) {
+		console.log("got message: " + message);
 		everyone.now.receiveMessage(this.now.name, message);
 	};
 
