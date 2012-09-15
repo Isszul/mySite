@@ -1,0 +1,515 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'now' ]
+2 info using npm@1.1.59
+3 info using node@v0.8.8
+4 verbose read json E:\Project\MyWebsite\package.json
+5 warn package.json application-name@0.0.1 No README.md file found!
+6 verbose read json E:\Project\MyWebsite\node_modules\express\package.json
+7 verbose read json E:\Project\MyWebsite\node_modules\jade\package.json
+8 verbose read json E:\Project\MyWebsite\node_modules\stylus\package.json
+9 verbose from cache E:\Project\MyWebsite\package.json
+10 verbose readDependencies using package.json deps
+11 verbose cache add [ 'now', null ]
+12 silly cache add name=undefined spec="now" args=["now",null]
+13 verbose parsed url { pathname: 'now', path: 'now', href: 'now' }
+14 silly lockFile c9bc849a-now now
+15 verbose lock now C:\Users\Alex\AppData\Roaming\npm-cache\c9bc849a-now.lock
+16 silly lockFile c9bc849a-now now
+17 verbose addNamed [ 'now', '' ]
+18 verbose addNamed [ null, '' ]
+19 silly lockFile 1193e862-now now@
+20 verbose lock now@ C:\Users\Alex\AppData\Roaming\npm-cache\1193e862-now.lock
+21 silly addNameRange { name: 'now', range: '', hasData: false }
+22 verbose url raw now
+23 verbose url resolving [ 'https://registry.npmjs.org/', './now' ]
+24 verbose url resolved https://registry.npmjs.org/now
+25 info retry registry request attempt 1 at 16:22:31
+26 verbose etag "3Y8902A5BHD3AB8LKPLP99SC8"
+27 http GET https://registry.npmjs.org/now
+28 http 304 https://registry.npmjs.org/now
+29 silly registry.get cb [ 304,
+29 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+29 silly registry.get     etag: '"3Y8902A5BHD3AB8LKPLP99SC8"',
+29 silly registry.get     date: 'Sat, 15 Sep 2012 15:22:41 GMT',
+29 silly registry.get     'content-length': '0' } ]
+30 verbose etag now from cache
+31 silly addNameRange number 2 { name: 'now', range: '', hasData: true }
+32 silly addNameRange versions [ 'now',
+32 silly addNameRange   [ '0.2.0',
+32 silly addNameRange     '0.2.1',
+32 silly addNameRange     '0.2.2',
+32 silly addNameRange     '0.2.3',
+32 silly addNameRange     '0.2.4',
+32 silly addNameRange     '0.3.0',
+32 silly addNameRange     '0.3.1',
+32 silly addNameRange     '0.3.2',
+32 silly addNameRange     '0.5.0',
+32 silly addNameRange     '0.5.1',
+32 silly addNameRange     '0.5.2',
+32 silly addNameRange     '0.5.3',
+32 silly addNameRange     '0.6.0',
+32 silly addNameRange     '0.6.1',
+32 silly addNameRange     '0.7.0',
+32 silly addNameRange     '0.7.1',
+32 silly addNameRange     '0.7.2',
+32 silly addNameRange     '0.7.3',
+32 silly addNameRange     '0.7.4',
+32 silly addNameRange     '0.7.5',
+32 silly addNameRange     '0.7.6',
+32 silly addNameRange     '0.8.0',
+32 silly addNameRange     '0.8.1' ] ]
+33 verbose addNamed [ 'now', '0.8.1' ]
+34 verbose addNamed [ '0.8.1', '0.8.1' ]
+35 silly lockFile 00d2b6cb-now-0-8-1 now@0.8.1
+36 verbose lock now@0.8.1 C:\Users\Alex\AppData\Roaming\npm-cache\00d2b6cb-now-0-8-1.lock
+37 verbose read json C:\Users\Alex\AppData\Roaming\npm-cache\now\0.8.1\package\package.json
+38 silly lockFile 00d2b6cb-now-0-8-1 now@0.8.1
+39 silly lockFile 1193e862-now now@
+40 silly resolved [ { author: { name: 'Flotype' },
+40 silly resolved     name: 'now',
+40 silly resolved     description: 'NowJS: An easy to use real-time RPC library',
+40 silly resolved     version: '0.8.1',
+40 silly resolved     repository: { type: 'git', url: 'git://github.com/Flotype/now.git' },
+40 silly resolved     main: 'lib/server.js',
+40 silly resolved     engines: { node: '>= v0.4.0' },
+40 silly resolved     dependencies: { 'socket.io': '>= 0.8.7', 'node-proxy': '>= 0.4.0' },
+40 silly resolved     devDependencies: {},
+40 silly resolved     readme: 'Get NowJS http://www.nowjs.com/\n=========\n\n###NowJS makes realtime web apps really easy.\n\n\n<a href="https://github.com/Flotype/now/">Go to Github</a> or \n<a href="https://github.com/Flotype/now/tarball/master">Download the master tgz</a>\n\n\nInstall From npm\n----------------\n\n`npm install now` or `npm install now -g` to install globally\n\n\n\nNowJS is a Node.js module. The client javascript (now.js) is served by the NowJS server.\n\n\nNowJS uses the excellent <a href="https://github.com/LearnBoost/Socket.IO-node">socket.io</a> and <a href="https://github.com/isaacs/node-proxy">node-proxy</a> libraries.\n\n2 Step Setup\n==============\n\n**1. On the server**\n\n    \n    var httpServer = require(\'http\').createServer(function(req, response){ /* Serve your static files */ })\n    httpServer.listen(8080);\n    \n    var nowjs = require("now");\n    var everyone = nowjs.initialize(httpServer);\n    \n    everyone.now.logStuff = function(msg){\n        console.log(msg);\n    }\n    \n**2. On the client**\n<pre><code>\n&lt;script type="text/javascript" src="http://localhost:8080/nowjs/now.js">&lt;/script>\n\n&lt;script type="text/javascript"&gt;\n  now.ready(function(){\n    // "Hello World!" will print on server\n    now.logStuff("Hello World!");\n  });\n&lt;/script>\n</code></pre>\n\nFAQ\n-------\n\n**Q: Can I pass in a callback or closure, for example, if the remote function is asynchronous?**\n\nA: Yes. This is 100% supported\n\n\n**Q: How do I use NowJS with [Express](https://github.com/visionmedia/express)?**\n\nA: Very easily. \n    var app = express.createServer();\n    app.listen(3000);\n    var everyone = require("now").initialize(app);\n\n**Q: How do I disable WebSockets or only use xhr-polling?**\n\nA: You can specifiy exactly which transports to use as an initialization options as follows:\n    \n    var nowjs = require("now");\n    var everyone = nowjs.initialize(yourHttpServer, {socketio: {transports: [\'xhr-polling\', \'jsonp-polling\']}});\n\n\n**Q: Error: " SyntaxError: Unexpected token *" / Can I statically host the now.js file?**\n\nA: On the client side, make sure you link to now.js like this\n\n     <script src="http://myserver:myport/nowjs/now.js"></script>\n\nYou do not need to host the file /nowjs/now.js. It is automatically hosted by the NowJS using the http server you pass into the .initialize(...) in your server code. If you choose to host now.js yourself, you can, but **do not use the version in github repo** you MUST save the file at `http://myserver:myport/nowjs/now.js` and host that, because it is automatically configured for your server.\n\nFurther Reading\n---------------\n\nNow that you have NowJS, try the NowJS [User Manual](http://nowjs.com/doc) and [Quick Chat Example](http://nowjs.com/guide) \n\nHave more questions? Please contact us:\nEmail: team@nowjs.com\n\nIRC: [#nowjs on freenode](http://webchat.freenode.net/?nick=nowjs.&channels=nowjs)\n\nTwitter: [@NowJSTeam](http://twitter.com/nowjsteam)',
+40 silly resolved     _id: 'now@0.8.1',
+40 silly resolved     _from: 'now' } ]
+41 info install now@0.8.1 into E:\Project\MyWebsite
+42 info installOne now@0.8.1
+43 verbose from cache C:\Users\Alex\AppData\Roaming\npm-cache\now\0.8.1\package\package.json
+44 info E:\Project\MyWebsite\node_modules\now unbuild
+45 verbose read json E:\Project\MyWebsite\node_modules\now\package.json
+46 verbose tar unpack C:\Users\Alex\AppData\Roaming\npm-cache\now\0.8.1\package.tgz
+47 silly lockFile 2ee0e192-oject-MyWebsite-node-modules-now E:\Project\MyWebsite\node_modules\now
+48 verbose lock E:\Project\MyWebsite\node_modules\now C:\Users\Alex\AppData\Roaming\npm-cache\2ee0e192-oject-MyWebsite-node-modules-now.lock
+49 silly gunzTarPerm modes [ '777', '666' ]
+50 silly gunzTarPerm extractEntry package.json
+51 silly gunzTarPerm extractEntry .npmignore
+52 silly gunzTarPerm extractEntry LICENSE
+53 silly gunzTarPerm extractEntry dist/now.js
+54 silly gunzTarPerm extractEntry doc/jsdoc/files.html
+55 silly gunzTarPerm extractEntry doc/jsdoc/index.html
+56 silly gunzTarPerm extractEntry doc/jsdoc/symbols/Group#now.html
+57 silly gunzTarPerm extractEntry doc/jsdoc/symbols/Group.html
+58 silly gunzTarPerm extractEntry doc/jsdoc/symbols/nowjs.html
+59 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/now_lib_fileServer.js.html
+60 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/flotype_now_lib_fileServer.js.html
+61 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/flotype_now_lib_group.js.html
+62 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/flotype_now_lib_handlers.js.html
+63 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/flotype_now_lib_now.js.html
+64 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/flotype_now_lib_nowUtil.js.html
+65 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/flotype_now_lib_proxy.js.html
+66 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/flotype_now_lib_scopeTable.js.html
+67 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/flotype_now_lib_server.js.html
+68 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/flotype_now_lib_support.js.html
+69 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/flotype_now_lib_user.js.html
+70 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/flotype_now_lib_function.js.html
+71 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/now_lib_function.js.html
+72 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/now_lib_group.js.html
+73 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/now_lib_handlers.js.html
+74 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/now_lib_now.js.html
+75 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/now_lib_nowUtil.js.html
+76 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/now_lib_proxy.js.html
+77 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/now_lib_scopeTable.js.html
+78 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/now_lib_server.js.html
+79 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/now_lib_support.js.html
+80 silly gunzTarPerm extractEntry doc/jsdoc/symbols/src/now_lib_user.js.html
+81 silly gunzTarPerm extractEntry doc/jsdoc/symbols/User#now.html
+82 silly gunzTarPerm extractEntry doc/jsdoc/symbols/User#user.html
+83 silly gunzTarPerm extractEntry doc/jsdoc/symbols/User.html
+84 silly gunzTarPerm extractEntry doc/jsdoc/symbols/_global_.html
+85 silly gunzTarPerm extractEntry doc/public/best_practices.md
+86 silly gunzTarPerm extractEntry doc/public/company.md
+87 silly gunzTarPerm extractEntry doc/public/getting_started.md
+88 silly gunzTarPerm extractEntry doc/public/jobs.md
+89 silly gunzTarPerm extractEntry doc/public/user_manual.md
+90 silly gunzTarPerm extractEntry bin/build.js
+91 silly gunzTarPerm extractEntry lib/user.js
+92 silly gunzTarPerm extractEntry lib/function.js
+93 silly gunzTarPerm extractEntry lib/group.js
+94 silly gunzTarPerm extractEntry lib/handlers.js
+95 silly gunzTarPerm extractEntry lib/support.js
+96 silly gunzTarPerm extractEntry lib/fileServer.js
+97 silly gunzTarPerm extractEntry lib/nowUtil.js
+98 silly gunzTarPerm extractEntry lib/proxy.js
+99 silly gunzTarPerm extractEntry lib/scopeTable.js
+100 silly gunzTarPerm extractEntry lib/server.js
+101 silly gunzTarPerm extractEntry lib/now.js
+102 silly gunzTarPerm extractEntry lib/nodeclient/now.js
+103 silly gunzTarPerm extractEntry lib/client/now.js
+104 silly gunzTarPerm extractEntry readme.md
+105 silly gunzTarPerm extractEntry Makefile
+106 silly gunzTarPerm extractEntry changelog.md
+107 silly gunzTarPerm extractEntry examples/express_example/app.js
+108 silly gunzTarPerm extractEntry examples/express_example/views/chat.ejs
+109 silly gunzTarPerm extractEntry examples/express_example/views/index.ejs
+110 silly gunzTarPerm extractEntry examples/express_example/views/layout.ejs
+111 silly gunzTarPerm extractEntry examples/helloworld_example/helloworld_server.js
+112 silly gunzTarPerm extractEntry examples/helloworld_example/helloworld.html
+113 silly gunzTarPerm extractEntry examples/multiroomchat_example/multiroomchat_server.js
+114 silly gunzTarPerm extractEntry examples/multiroomchat_example/multiroomchat.html
+115 silly gunzTarPerm extractEntry examples/nodeclient_example/chat.js
+116 silly gunzTarPerm extractEntry examples/nodeclient_example/server.js
+117 silly gunzTarPerm extractEntry examples/nodeclient_example/index.html
+118 verbose read json E:\Project\MyWebsite\node_modules\now\package.json
+119 silly lockFile 2ee0e192-oject-MyWebsite-node-modules-now E:\Project\MyWebsite\node_modules\now
+120 info preinstall now@0.8.1
+121 verbose from cache E:\Project\MyWebsite\node_modules\now\package.json
+122 verbose readDependencies using package.json deps
+123 verbose from cache E:\Project\MyWebsite\node_modules\now\package.json
+124 verbose readDependencies using package.json deps
+125 verbose cache add [ 'socket.io@>= 0.8.7', null ]
+126 silly cache add name=undefined spec="socket.io@>= 0.8.7" args=["socket.io@>= 0.8.7",null]
+127 verbose parsed url { pathname: 'socket.io@%3E=%200.8.7',
+127 verbose parsed url   path: 'socket.io@%3E=%200.8.7',
+127 verbose parsed url   href: 'socket.io@%3E=%200.8.7' }
+128 silly cache add name="socket.io" spec=">= 0.8.7" args=["socket.io",">= 0.8.7"]
+129 verbose parsed url { pathname: '%3E=%200.8.7',
+129 verbose parsed url   path: '%3E=%200.8.7',
+129 verbose parsed url   href: '%3E=%200.8.7' }
+130 verbose addNamed [ 'socket.io', '>= 0.8.7' ]
+131 verbose addNamed [ null, '>=0.8.7' ]
+132 silly lockFile a92e7cf4-socket-io-0-8-7 socket.io@>= 0.8.7
+133 verbose lock socket.io@>= 0.8.7 C:\Users\Alex\AppData\Roaming\npm-cache\a92e7cf4-socket-io-0-8-7.lock
+134 verbose cache add [ 'node-proxy@>= 0.4.0', null ]
+135 silly cache add name=undefined spec="node-proxy@>= 0.4.0" args=["node-proxy@>= 0.4.0",null]
+136 verbose parsed url { pathname: 'node-proxy@%3E=%200.4.0',
+136 verbose parsed url   path: 'node-proxy@%3E=%200.4.0',
+136 verbose parsed url   href: 'node-proxy@%3E=%200.4.0' }
+137 silly cache add name="node-proxy" spec=">= 0.4.0" args=["node-proxy",">= 0.4.0"]
+138 verbose parsed url { pathname: '%3E=%200.4.0',
+138 verbose parsed url   path: '%3E=%200.4.0',
+138 verbose parsed url   href: '%3E=%200.4.0' }
+139 verbose addNamed [ 'node-proxy', '>= 0.4.0' ]
+140 verbose addNamed [ null, '>=0.4.0' ]
+141 silly lockFile 592bcf82-node-proxy-0-4-0 node-proxy@>= 0.4.0
+142 verbose lock node-proxy@>= 0.4.0 C:\Users\Alex\AppData\Roaming\npm-cache\592bcf82-node-proxy-0-4-0.lock
+143 silly addNameRange { name: 'socket.io', range: '>=0.8.7', hasData: false }
+144 silly addNameRange { name: 'node-proxy', range: '>=0.4.0', hasData: false }
+145 verbose url raw node-proxy
+146 verbose url resolving [ 'https://registry.npmjs.org/', './node-proxy' ]
+147 verbose url resolved https://registry.npmjs.org/node-proxy
+148 info retry registry request attempt 1 at 16:22:32
+149 verbose etag "96MNE6GHEF4Y05AQ9KQIFITY"
+150 http GET https://registry.npmjs.org/node-proxy
+151 verbose url raw socket.io
+152 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io' ]
+153 verbose url resolved https://registry.npmjs.org/socket.io
+154 info retry registry request attempt 1 at 16:22:32
+155 verbose etag "DV5ZBT8Y4OFIQFSDLUAYNRJ1W"
+156 http GET https://registry.npmjs.org/socket.io
+157 http 304 https://registry.npmjs.org/node-proxy
+158 silly registry.get cb [ 304,
+158 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+158 silly registry.get     etag: '"96MNE6GHEF4Y05AQ9KQIFITY"',
+158 silly registry.get     date: 'Sat, 15 Sep 2012 15:22:42 GMT',
+158 silly registry.get     'content-length': '0' } ]
+159 verbose etag node-proxy from cache
+160 silly addNameRange number 2 { name: 'node-proxy', range: '>=0.4.0', hasData: true }
+161 silly addNameRange versions [ 'node-proxy',
+161 silly addNameRange   [ '0.3.1', '0.3.2', '0.4.0', '0.5.0', '0.5.1', '0.5.2', '0.6.0' ] ]
+162 verbose addNamed [ 'node-proxy', '0.6.0' ]
+163 verbose addNamed [ '0.6.0', '0.6.0' ]
+164 silly lockFile 4095cacd-node-proxy-0-6-0 node-proxy@0.6.0
+165 verbose lock node-proxy@0.6.0 C:\Users\Alex\AppData\Roaming\npm-cache\4095cacd-node-proxy-0-6-0.lock
+166 verbose read json C:\Users\Alex\AppData\Roaming\npm-cache\node-proxy\0.6.0\package\package.json
+167 http 304 https://registry.npmjs.org/socket.io
+168 silly registry.get cb [ 304,
+168 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+168 silly registry.get     etag: '"DV5ZBT8Y4OFIQFSDLUAYNRJ1W"',
+168 silly registry.get     date: 'Sat, 15 Sep 2012 15:22:42 GMT',
+168 silly registry.get     'content-length': '0' } ]
+169 verbose etag socket.io from cache
+170 silly lockFile 4095cacd-node-proxy-0-6-0 node-proxy@0.6.0
+171 silly lockFile 592bcf82-node-proxy-0-4-0 node-proxy@>= 0.4.0
+172 silly addNameRange number 2 { name: 'socket.io', range: '>=0.8.7', hasData: true }
+173 silly addNameRange versions [ 'socket.io',
+173 silly addNameRange   [ '0.3.8',
+173 silly addNameRange     '0.4.0',
+173 silly addNameRange     '0.4.1',
+173 silly addNameRange     '0.5.1',
+173 silly addNameRange     '0.5.3',
+173 silly addNameRange     '0.6.0',
+173 silly addNameRange     '0.6.1',
+173 silly addNameRange     '0.6.3',
+173 silly addNameRange     '0.6.4',
+173 silly addNameRange     '0.6.5',
+173 silly addNameRange     '0.6.6',
+173 silly addNameRange     '0.6.7',
+173 silly addNameRange     '0.6.8',
+173 silly addNameRange     '0.6.9',
+173 silly addNameRange     '0.6.10',
+173 silly addNameRange     '0.6.11',
+173 silly addNameRange     '0.6.12',
+173 silly addNameRange     '0.6.14',
+173 silly addNameRange     '0.6.15',
+173 silly addNameRange     '0.6.16',
+173 silly addNameRange     '0.6.17',
+173 silly addNameRange     '0.6.18',
+173 silly addNameRange     '0.7.0',
+173 silly addNameRange     '0.7.1',
+173 silly addNameRange     '0.7.2',
+173 silly addNameRange     '0.7.3',
+173 silly addNameRange     '0.7.4',
+173 silly addNameRange     '0.7.5',
+173 silly addNameRange     '0.7.6',
+173 silly addNameRange     '0.7.7',
+173 silly addNameRange     '0.7.8',
+173 silly addNameRange     '0.7.9',
+173 silly addNameRange     '0.7.10',
+173 silly addNameRange     '0.7.11',
+173 silly addNameRange     '0.8.0',
+173 silly addNameRange     '0.8.1',
+173 silly addNameRange     '0.8.2',
+173 silly addNameRange     '0.8.3',
+173 silly addNameRange     '0.8.4',
+173 silly addNameRange     '0.8.5',
+173 silly addNameRange     '0.8.6',
+173 silly addNameRange     '0.8.7',
+173 silly addNameRange     '0.9.0',
+173 silly addNameRange     '0.9.1',
+173 silly addNameRange     '0.9.1-1',
+173 silly addNameRange     '0.9.2',
+173 silly addNameRange     '0.9.3',
+173 silly addNameRange     '0.9.4',
+173 silly addNameRange     '0.9.5',
+173 silly addNameRange     '0.9.6',
+173 silly addNameRange     '0.9.7',
+173 silly addNameRange     '0.9.8',
+173 silly addNameRange     '0.9.9',
+173 silly addNameRange     '0.9.10' ] ]
+174 verbose addNamed [ 'socket.io', '0.9.10' ]
+175 verbose addNamed [ '0.9.10', '0.9.10' ]
+176 silly lockFile 5127d080-socket-io-0-9-10 socket.io@0.9.10
+177 verbose lock socket.io@0.9.10 C:\Users\Alex\AppData\Roaming\npm-cache\5127d080-socket-io-0-9-10.lock
+178 verbose read json C:\Users\Alex\AppData\Roaming\npm-cache\socket.io\0.9.10\package\package.json
+179 silly lockFile 5127d080-socket-io-0-9-10 socket.io@0.9.10
+180 silly lockFile a92e7cf4-socket-io-0-8-7 socket.io@>= 0.8.7
+181 silly resolved [ { name: 'node-proxy',
+181 silly resolved     version: '0.6.0',
+181 silly resolved     description: 'A module for node implementing __noSuchMethod__-type handlers, such as object overloading, as part of the Harmony Catch-All Proxies specification found at http://wiki.ecmascript.org/doku.php?id=harmony:proxies',
+181 silly resolved     keywords: [ 'interceptor', 'proxy', 'overload', '__noSuchMethod__' ],
+181 silly resolved     contributors: [ [Object], [Object], [Object] ],
+181 silly resolved     licenses: [ [Object] ],
+181 silly resolved     bugs: { url: 'http://github.com/samshull/node-proxy/issues' },
+181 silly resolved     implements: [ 'http://wiki.ecmascript.org/doku.php?id=harmony:proxies' ],
+181 silly resolved     engines: { node: '>=0.6', npm: '>= 1.1.17' },
+181 silly resolved     repositories: [ [Object] ],
+181 silly resolved     main: './lib/node-proxy.js',
+181 silly resolved     scripts:
+181 silly resolved      { install: 'node-gyp configure build',
+181 silly resolved        test: 'node test/test.js' },
+181 silly resolved     readme: 'node-proxy is an implementation of Harmony Proxies http://wiki.ecmascript.org/doku.php?id=harmony:proxies\nthat allows the developer to create "catch-all" property handlers for an object or a function in node.js.\n\nAuthor: Sam Shull  \nRepository: http://github.com/samshull/node-proxy  \nIssues: http://github.com/samshull/node-proxy/issues  \n\n*** This does not work appropriately in node versions 0.1.100 - 0.1.102. You will need to install node_version.h in $PREFIX/include/node\n\nMethods:\n\nObject create(ProxyHandler handler [, Object proto ] ) throws Error, TypeError\n\nFunction createFunction(ProxyHandler handler, Function callTrap [, Function constructTrap ] ) throws Error, TypeError\n\nBoolean isTrapping(Object obj) throws Error\n\n\nAdditional Methods (for ECMAScript 5 compatibliity): @see http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262.pdf\n\nBoolean freeze(Object obj) throws Error, TypeError\n\nBoolean seal(Object obj) throws Error, TypeError\n\nBoolean preventExtensions(Object obj) throws Error, TypeError\n\nBoolean isFrozen(Object obj) throws Error, TypeError\n\nBoolean isSealed(Object obj) throws Error, TypeError\n\nBoolean isExtensible(Object obj) throws Error, TypeError\n\nPropertyDescriptor getOwnPropertyDescriptor(Object obj, String name) throws Error, TypeError\n\nBoolean defineProperty(Object obj, String name, PropertyDescriptor pd) throws Error, TypeError\n\nBoolean defineProperties(Object obj, Object descriptors) throws Error, TypeError\n\n\nMore methods:\n\nObject hidden(Object obj, String name [, Object value ] ) throws Error\n- Set or retrieve a hidden property on an Object\n\nObject clone(Object obj) throws Error\n- Create a shallow copy of an Object\n\nBoolean isProxy(Object obj)\n- determine if an object was created by Proxy\n\nBoolean setPrototype(Object obj, Object obj) throws Error\n-set the prototype of a given object to the second given object\n',
+181 silly resolved     _id: 'node-proxy@0.6.0',
+181 silly resolved     _from: 'node-proxy@>= 0.4.0' },
+181 silly resolved   { name: 'socket.io',
+181 silly resolved     version: '0.9.10',
+181 silly resolved     description: 'Real-time apps made cross-browser & easy with a WebSocket-like API',
+181 silly resolved     homepage: 'http://socket.io',
+181 silly resolved     keywords: [ 'websocket', 'socket', 'realtime', 'socket.io', 'comet', 'ajax' ],
+181 silly resolved     author: { name: 'Guillermo Rauch', email: 'guillermo@learnboost.com' },
+181 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+181 silly resolved     repository:
+181 silly resolved      { type: 'git',
+181 silly resolved        url: 'https://github.com/LearnBoost/socket.io.git' },
+181 silly resolved     dependencies:
+181 silly resolved      { 'socket.io-client': '0.9.10',
+181 silly resolved        policyfile: '0.0.4',
+181 silly resolved        redis: '0.7.2' },
+181 silly resolved     devDependencies:
+181 silly resolved      { expresso: '0.9.2',
+181 silly resolved        should: '*',
+181 silly resolved        benchmark: '0.2.2',
+181 silly resolved        microtime: '0.1.3-1',
+181 silly resolved        colors: '0.5.1' },
+181 silly resolved     main: 'index',
+181 silly resolved     engines: { node: '>= 0.4.0' },
+181 silly resolved     scripts: { test: 'make test' },
+181 silly resolved     readme: '# Socket.IO\n\nSocket.IO is a Node.JS project that makes WebSockets and realtime possible in\nall browsers. It also enhances WebSockets by providing built-in multiplexing,\nhorizontal scalability, automatic JSON encoding/decoding, and more.\n\n## How to Install\n\n```bash\nnpm install socket.io\n```\n\n## How to use\n\nFirst, require `socket.io`:\n\n```js\nvar io = require(\'socket.io\');\n```\n\nNext, attach it to a HTTP/HTTPS server. If you\'re using the fantastic `express`\nweb framework:\n\n#### Express 3.x\n\n```js\nvar app = express()\n  , server = require(\'http\').createServer(app)\n  , io = io.listen(server);\n\nserver.listen(80);\n\nio.sockets.on(\'connection\', function (socket) {\n  socket.emit(\'news\', { hello: \'world\' });\n  socket.on(\'my other event\', function (data) {\n    console.log(data);\n  });\n});\n```\n\n#### Express 2.x\n\n```js\nvar app = express.createServer()\n  , io = io.listen(app);\n\napp.listen(80);\n\nio.sockets.on(\'connection\', function (socket) {\n  socket.emit(\'news\', { hello: \'world\' });\n  socket.on(\'my other event\', function (data) {\n    console.log(data);\n  });\n});\n```\n\nFinally, load it from the client side code:\n\n```html\n<script src="/socket.io/socket.io.js"></script>\n<script>\n  var socket = io.connect(\'http://localhost\');\n  socket.on(\'news\', function (data) {\n    console.log(data);\n    socket.emit(\'my other event\', { my: \'data\' });\n  });\n</script>\n```\n\nFor more thorough examples, look at the `examples/` directory.\n\n## Short recipes\n\n### Sending and receiving events.\n\nSocket.IO allows you to emit and receive custom events.\nBesides `connect`, `message` and `disconnect`, you can emit custom events:\n\n```js\n// note, io.listen(<port>) will create a http server for you\nvar io = require(\'socket.io\').listen(80);\n\nio.sockets.on(\'connection\', function (socket) {\n  io.sockets.emit(\'this\', { will: \'be received by everyone\' });\n\n  socket.on(\'private message\', function (from, msg) {\n    console.log(\'I received a private message by \', from, \' saying \', msg);\n  });\n\n  socket.on(\'disconnect\', function () {\n    io.sockets.emit(\'user disconnected\');\n  });\n});\n```\n\n### Storing data associated to a client\n\nSometimes it\'s necessary to store data associated with a client that\'s\nnecessary for the duration of the session.\n\n#### Server side\n\n```js\nvar io = require(\'socket.io\').listen(80);\n\nio.sockets.on(\'connection\', function (socket) {\n  socket.on(\'set nickname\', function (name) {\n    socket.set(\'nickname\', name, function () { socket.emit(\'ready\'); });\n  });\n\n  socket.on(\'msg\', function () {\n    socket.get(\'nickname\', function (err, name) {\n      console.log(\'Chat message by \', name);\n    });\n  });\n});\n```\n\n#### Client side\n\n```html\n<script>\n  var socket = io.connect(\'http://localhost\');\n\n  socket.on(\'connect\', function () {\n    socket.emit(\'set nickname\', prompt(\'What is your nickname?\'));\n    socket.on(\'ready\', function () {\n      console.log(\'Connected !\');\n      socket.emit(\'msg\', prompt(\'What is your message?\'));\n    });\n  });\n</script>\n```\n\n### Restricting yourself to a namespace\n\nIf you have control over all the messages and events emitted for a particular\napplication, using the default `/` namespace works.\n\nIf you want to leverage 3rd-party code, or produce code to share with others,\nsocket.io provides a way of namespacing a `socket`.\n\nThis has the benefit of `multiplexing` a single connection. Instead of\nsocket.io using two `WebSocket` connections, it\'ll use one.\n\nThe following example defines a socket that listens on \'/chat\' and one for\n\'/news\':\n\n#### Server side\n\n```js\nvar io = require(\'socket.io\').listen(80);\n\nvar chat = io\n  .of(\'/chat\')\n  .on(\'connection\', function (socket) {\n    socket.emit(\'a message\', { that: \'only\', \'/chat\': \'will get\' });\n    chat.emit(\'a message\', { everyone: \'in\', \'/chat\': \'will get\' });\n  });\n\nvar news = io\n  .of(\'/news\');\n  .on(\'connection\', function (socket) {\n    socket.emit(\'item\', { news: \'item\' });\n  });\n```\n\n#### Client side:\n\n```html\n<script>\n  var chat = io.connect(\'http://localhost/chat\')\n    , news = io.connect(\'http://localhost/news\');\n\n  chat.on(\'connect\', function () {\n    chat.emit(\'hi!\');\n  });\n\n  news.on(\'news\', function () {\n    news.emit(\'woot\');\n  });\n</script>\n```\n\n### Sending volatile messages.\n\nSometimes certain messages can be dropped. Let\'s say you have an app that\nshows realtime tweets for the keyword `bieber`. \n\nIf a certain client is not ready to receive messages (because of network slowness\nor other issues, or because he\'s connected through long polling and is in the\nmiddle of a request-response cycle), if he doesn\'t receive ALL the tweets related\nto bieber your application won\'t suffer.\n\nIn that case, you might want to send those messages as volatile messages.\n\n#### Server side\n\n```js\nvar io = require(\'socket.io\').listen(80);\n\nio.sockets.on(\'connection\', function (socket) {\n  var tweets = setInterval(function () {\n    getBieberTweet(function (tweet) {\n      socket.volatile.emit(\'bieber tweet\', tweet);\n    });\n  }, 100);\n\n  socket.on(\'disconnect\', function () {\n    clearInterval(tweets);\n  });\n});\n```\n\n#### Client side\n\nIn the client side, messages are received the same way whether they\'re volatile\nor not.\n\n### Getting acknowledgements\n\nSometimes, you might want to get a callback when the client confirmed the message\nreception.\n\nTo do this, simply pass a function as the last parameter of `.send` or `.emit`.\nWhat\'s more, when you use `.emit`, the acknowledgement is done by you, which\nmeans you can also pass data along:\n\n#### Server side\n\n```js\nvar io = require(\'socket.io\').listen(80);\n\nio.sockets.on(\'connection\', function (socket) {\n  socket.on(\'ferret\', function (name, fn) {\n    fn(\'woot\');\n  });\n});\n```\n\n#### Client side\n\n```html\n<script>\n  var socket = io.connect(); // TIP: .connect with no args does auto-discovery\n  socket.on(\'connect\', function () { // TIP: you can avoid listening on `connect` and listen on events directly too!\n    socket.emit(\'ferret\', \'tobi\', function (data) {\n      console.log(data); // data will be \'woot\'\n    });\n  });\n</script>\n```\n\n### Broadcasting messages\n\nTo broadcast, simply add a `broadcast` flag to `emit` and `send` method calls.\nBroadcasting means sending a message to everyone else except for the socket\nthat starts it.\n\n#### Server side\n\n```js\nvar io = require(\'socket.io\').listen(80);\n\nio.sockets.on(\'connection\', function (socket) {\n  socket.broadcast.emit(\'user connected\');\n  socket.broadcast.json.send({ a: \'message\' });\n});\n```\n\n### Rooms\n\nSometimes you want to put certain sockets in the same room, so that it\'s easy\nto broadcast to all of them together.\n\nThink of this as built-in channels for sockets. Sockets `join` and `leave`\nrooms in each socket.\n\n#### Server side\n\n```js\nvar io = require(\'socket.io\').listen(80);\n\nio.sockets.on(\'connection\', function (socket) {\n  socket.join(\'justin bieber fans\');\n  socket.broadcast.to(\'justin bieber fans\').emit(\'new fan\');\n  io.sockets.in(\'rammstein fans\').emit(\'new non-fan\');\n});\n```\n\n### Using it just as a cross-browser WebSocket\n\nIf you just want the WebSocket semantics, you can do that too.\nSimply leverage `send` and listen on the `message` event:\n\n#### Server side\n\n```js\nvar io = require(\'socket.io\').listen(80);\n\nio.sockets.on(\'connection\', function (socket) {\n  socket.on(\'message\', function () { });\n  socket.on(\'disconnect\', function () { });\n});\n```\n\n#### Client side\n\n```html\n<script>\n  var socket = io.connect(\'http://localhost/\');\n  socket.on(\'connect\', function () {\n    socket.send(\'hi\');\n\n    socket.on(\'message\', function (msg) {\n      // my msg\n    });\n  });\n</script>\n```\n\n### Changing configuration\n\nConfiguration in socket.io is TJ-style:\n\n#### Server side\n\n```js\nvar io = require(\'socket.io\').listen(80);\n\nio.configure(function () {\n  io.set(\'transports\', [\'websocket\', \'flashsocket\', \'xhr-polling\']);\n});\n\nio.configure(\'development\', function () {\n  io.set(\'transports\', [\'websocket\', \'xhr-polling\']);\n  io.enable(\'log\');\n});\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2011 Guillermo Rauch &lt;guillermo@learnboost.com&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+181 silly resolved     _id: 'socket.io@0.9.10',
+181 silly resolved     _from: 'socket.io@>= 0.8.7' } ]
+182 info install node-proxy@0.6.0 into E:\Project\MyWebsite\node_modules\now
+183 info install socket.io@0.9.10 into E:\Project\MyWebsite\node_modules\now
+184 info installOne node-proxy@0.6.0
+185 info installOne socket.io@0.9.10
+186 verbose from cache C:\Users\Alex\AppData\Roaming\npm-cache\node-proxy\0.6.0\package\package.json
+187 info E:\Project\MyWebsite\node_modules\now\node_modules\node-proxy unbuild
+188 verbose read json E:\Project\MyWebsite\node_modules\now\node_modules\node-proxy\package.json
+189 verbose from cache C:\Users\Alex\AppData\Roaming\npm-cache\socket.io\0.9.10\package\package.json
+190 info E:\Project\MyWebsite\node_modules\now\node_modules\socket.io unbuild
+191 verbose read json E:\Project\MyWebsite\node_modules\now\node_modules\socket.io\package.json
+192 verbose tar unpack C:\Users\Alex\AppData\Roaming\npm-cache\node-proxy\0.6.0\package.tgz
+193 silly lockFile acee010a-ules-now-node-modules-node-proxy E:\Project\MyWebsite\node_modules\now\node_modules\node-proxy
+194 verbose lock E:\Project\MyWebsite\node_modules\now\node_modules\node-proxy C:\Users\Alex\AppData\Roaming\npm-cache\acee010a-ules-now-node-modules-node-proxy.lock
+195 verbose tar unpack C:\Users\Alex\AppData\Roaming\npm-cache\socket.io\0.9.10\package.tgz
+196 silly lockFile 7e894094-dules-now-node-modules-socket-io E:\Project\MyWebsite\node_modules\now\node_modules\socket.io
+197 verbose lock E:\Project\MyWebsite\node_modules\now\node_modules\socket.io C:\Users\Alex\AppData\Roaming\npm-cache\7e894094-dules-now-node-modules-socket-io.lock
+198 silly gunzTarPerm modes [ '777', '666' ]
+199 silly gunzTarPerm modes [ '777', '666' ]
+200 silly gunzTarPerm extractEntry package.json
+201 silly gunzTarPerm extractEntry package.json
+202 silly gunzTarPerm extractEntry .npmignore
+203 silly gunzTarPerm extractEntry README.md
+204 silly gunzTarPerm extractEntry .npmignore
+205 silly gunzTarPerm extractEntry LICENSE
+206 silly gunzTarPerm extractEntry binding.gyp
+207 silly gunzTarPerm extractEntry index.js
+208 silly gunzTarPerm extractEntry examples/autoload-namespace/autoload-namespace.js
+209 silly gunzTarPerm extractEntry examples/autoload-namespace/autoload-test.js
+210 silly gunzTarPerm extractEntry .travis.yml
+211 silly gunzTarPerm extractEntry benchmarks/decode.bench.js
+212 silly gunzTarPerm extractEntry benchmarks/encode.bench.js
+213 silly gunzTarPerm extractEntry benchmarks/runner.js
+214 silly gunzTarPerm extractEntry examples/autoload-namespace/org/w3c/DOM/Document.js
+215 silly gunzTarPerm extractEntry examples/autoload-namespace/org/w3c/DOM/Document/String/Test.js
+216 silly gunzTarPerm extractEntry lib/node-proxy.js
+217 silly gunzTarPerm extractEntry History.md
+218 silly gunzTarPerm extractEntry LICENSE.txt
+219 silly gunzTarPerm extractEntry lib/client.js
+220 silly gunzTarPerm extractEntry lib/manager.js
+221 silly gunzTarPerm extractEntry src/node-proxy.cc
+222 silly gunzTarPerm extractEntry src/node-proxy.h
+223 silly gunzTarPerm extractEntry lib/namespace.js
+224 silly gunzTarPerm extractEntry lib/parser.js
+225 silly gunzTarPerm extractEntry lib/socket.io.js
+226 silly gunzTarPerm extractEntry lib/logger.js
+227 silly gunzTarPerm extractEntry test/test.js
+228 silly gunzTarPerm extractEntry lib/static.js
+229 silly gunzTarPerm extractEntry lib/store.js
+230 silly gunzTarPerm extractEntry lib/transport.js
+231 silly gunzTarPerm extractEntry lib/util.js
+232 silly gunzTarPerm extractEntry lib/socket.js
+233 silly gunzTarPerm extractEntry lib/stores/memory.js
+234 silly gunzTarPerm extractEntry lib/stores/redis.js
+235 silly gunzTarPerm extractEntry lib/transports/flashsocket.js
+236 silly gunzTarPerm extractEntry lib/transports/htmlfile.js
+237 silly gunzTarPerm extractEntry lib/transports/http-polling.js
+238 silly gunzTarPerm extractEntry lib/transports/http.js
+239 silly gunzTarPerm extractEntry lib/transports/index.js
+240 silly gunzTarPerm extractEntry lib/transports/jsonp-polling.js
+241 silly gunzTarPerm extractEntry lib/transports/websocket.js
+242 silly gunzTarPerm extractEntry lib/transports/xhr-polling.js
+243 silly gunzTarPerm extractEntry lib/transports/websocket/default.js
+244 silly gunzTarPerm extractEntry lib/transports/websocket/hybi-07-12.js
+245 silly gunzTarPerm extractEntry lib/transports/websocket/hybi-16.js
+246 silly gunzTarPerm extractEntry lib/transports/websocket/index.js
+247 silly gunzTarPerm extractEntry Makefile
+248 silly gunzTarPerm extractEntry Readme.md
+249 verbose read json E:\Project\MyWebsite\node_modules\now\node_modules\node-proxy\package.json
+250 silly lockFile acee010a-ules-now-node-modules-node-proxy E:\Project\MyWebsite\node_modules\now\node_modules\node-proxy
+251 info preinstall node-proxy@0.6.0
+252 verbose from cache E:\Project\MyWebsite\node_modules\now\node_modules\node-proxy\package.json
+253 verbose readDependencies using package.json deps
+254 verbose from cache E:\Project\MyWebsite\node_modules\now\node_modules\node-proxy\package.json
+255 verbose readDependencies using package.json deps
+256 silly resolved []
+257 verbose about to build E:\Project\MyWebsite\node_modules\now\node_modules\node-proxy
+258 info build E:\Project\MyWebsite\node_modules\now\node_modules\node-proxy
+259 verbose from cache E:\Project\MyWebsite\node_modules\now\node_modules\node-proxy\package.json
+260 verbose linkStuff [ false,
+260 verbose linkStuff   false,
+260 verbose linkStuff   false,
+260 verbose linkStuff   'E:\\Project\\MyWebsite\\node_modules\\now\\node_modules' ]
+261 info linkStuff node-proxy@0.6.0
+262 verbose linkBins node-proxy@0.6.0
+263 verbose linkMans node-proxy@0.6.0
+264 verbose rebuildBundles node-proxy@0.6.0
+265 info install node-proxy@0.6.0
+266 verbose unsafe-perm in lifecycle true
+267 silly exec cmd "/c" "node-gyp configure build"
+268 silly cmd,/c,node-gyp configure build,E:\Project\MyWebsite\node_modules\now\node_modules\node-proxy spawning
+269 verbose read json E:\Project\MyWebsite\node_modules\now\node_modules\socket.io\package.json
+270 silly lockFile 7e894094-dules-now-node-modules-socket-io E:\Project\MyWebsite\node_modules\now\node_modules\socket.io
+271 info preinstall socket.io@0.9.10
+272 verbose from cache E:\Project\MyWebsite\node_modules\now\node_modules\socket.io\package.json
+273 verbose readDependencies using package.json deps
+274 verbose from cache E:\Project\MyWebsite\node_modules\now\node_modules\socket.io\package.json
+275 verbose readDependencies using package.json deps
+276 verbose cache add [ 'socket.io-client@0.9.10', null ]
+277 silly cache add name=undefined spec="socket.io-client@0.9.10" args=["socket.io-client@0.9.10",null]
+278 verbose parsed url { pathname: 'socket.io-client@0.9.10',
+278 verbose parsed url   path: 'socket.io-client@0.9.10',
+278 verbose parsed url   href: 'socket.io-client@0.9.10' }
+279 silly cache add name="socket.io-client" spec="0.9.10" args=["socket.io-client","0.9.10"]
+280 verbose parsed url { pathname: '0.9.10', path: '0.9.10', href: '0.9.10' }
+281 verbose addNamed [ 'socket.io-client', '0.9.10' ]
+282 verbose addNamed [ '0.9.10', '0.9.10' ]
+283 silly lockFile 147e2402-socket-io-client-0-9-10 socket.io-client@0.9.10
+284 verbose lock socket.io-client@0.9.10 C:\Users\Alex\AppData\Roaming\npm-cache\147e2402-socket-io-client-0-9-10.lock
+285 verbose cache add [ 'policyfile@0.0.4', null ]
+286 silly cache add name=undefined spec="policyfile@0.0.4" args=["policyfile@0.0.4",null]
+287 verbose parsed url { pathname: 'policyfile@0.0.4',
+287 verbose parsed url   path: 'policyfile@0.0.4',
+287 verbose parsed url   href: 'policyfile@0.0.4' }
+288 silly cache add name="policyfile" spec="0.0.4" args=["policyfile","0.0.4"]
+289 verbose parsed url { pathname: '0.0.4', path: '0.0.4', href: '0.0.4' }
+290 verbose addNamed [ 'policyfile', '0.0.4' ]
+291 verbose addNamed [ '0.0.4', '0.0.4' ]
+292 silly lockFile 8b99131a-policyfile-0-0-4 policyfile@0.0.4
+293 verbose lock policyfile@0.0.4 C:\Users\Alex\AppData\Roaming\npm-cache\8b99131a-policyfile-0-0-4.lock
+294 verbose cache add [ 'redis@0.7.2', null ]
+295 silly cache add name=undefined spec="redis@0.7.2" args=["redis@0.7.2",null]
+296 verbose parsed url { pathname: 'redis@0.7.2',
+296 verbose parsed url   path: 'redis@0.7.2',
+296 verbose parsed url   href: 'redis@0.7.2' }
+297 silly cache add name="redis" spec="0.7.2" args=["redis","0.7.2"]
+298 verbose parsed url { pathname: '0.7.2', path: '0.7.2', href: '0.7.2' }
+299 verbose addNamed [ 'redis', '0.7.2' ]
+300 verbose addNamed [ '0.7.2', '0.7.2' ]
+301 silly lockFile b62421fe-redis-0-7-2 redis@0.7.2
+302 verbose lock redis@0.7.2 C:\Users\Alex\AppData\Roaming\npm-cache\b62421fe-redis-0-7-2.lock
+303 verbose url raw socket.io-client/0.9.10
+304 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io-client/0.9.10' ]
+305 verbose url resolved https://registry.npmjs.org/socket.io-client/0.9.10
+306 info retry registry request attempt 1 at 16:22:34
+307 verbose etag "DT1FIZVLJNN64WY9GPUQGYRJA"
+308 http GET https://registry.npmjs.org/socket.io-client/0.9.10
+309 verbose url raw policyfile/0.0.4
+310 verbose url resolving [ 'https://registry.npmjs.org/', './policyfile/0.0.4' ]
+311 verbose url resolved https://registry.npmjs.org/policyfile/0.0.4
+312 info retry registry request attempt 1 at 16:22:34
+313 verbose etag "3G5JE6KEJPXIW1QGIC1YOI4IK"
+314 http GET https://registry.npmjs.org/policyfile/0.0.4
+315 verbose url raw redis/0.7.2
+316 verbose url resolving [ 'https://registry.npmjs.org/', './redis/0.7.2' ]
+317 verbose url resolved https://registry.npmjs.org/redis/0.7.2
+318 info retry registry request attempt 1 at 16:22:34
+319 verbose etag "8RDGSWIBIHSFU8YOWHHX2YC9W"
+320 http GET https://registry.npmjs.org/redis/0.7.2
+321 info node-proxy@0.6.0 Failed to exec install script
+322 info E:\Project\MyWebsite\node_modules\now\node_modules\node-proxy unbuild
+323 verbose from cache E:\Project\MyWebsite\node_modules\now\node_modules\node-proxy\package.json
+324 info preuninstall node-proxy@0.6.0
+325 info uninstall node-proxy@0.6.0
+326 verbose false,E:\Project\MyWebsite\node_modules,E:\Project\MyWebsite\node_modules\now\node_modules unbuild node-proxy@0.6.0
+327 info postuninstall node-proxy@0.6.0
+328 verbose about to build E:\Project\MyWebsite\node_modules\now
+329 info E:\Project\MyWebsite\node_modules\now unbuild
+330 verbose from cache E:\Project\MyWebsite\node_modules\now\package.json
+331 info preuninstall now@0.8.1
+332 info uninstall now@0.8.1
+333 verbose true,E:\Project\MyWebsite\node_modules,E:\Project\MyWebsite\node_modules unbuild now@0.8.1
+334 info postuninstall now@0.8.1
+335 error node-proxy@0.6.0 install: `node-gyp configure build`
+335 error `cmd "/c" "node-gyp configure build"` failed with 1
+336 error Failed at the node-proxy@0.6.0 install script.
+336 error This is most likely a problem with the node-proxy package,
+336 error not with npm itself.
+336 error Tell the author that this fails on your system:
+336 error     node-gyp configure build
+336 error You can get their info via:
+336 error     npm owner ls node-proxy
+336 error There is likely additional logging output above.
+337 error System Windows_NT 6.1.7601
+338 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "now"
+339 error cwd E:\Project\MyWebsite
+340 error node -v v0.8.8
+341 error npm -v 1.1.59
+342 error code ELIFECYCLE
+343 verbose exit [ 1, true ]

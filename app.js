@@ -3,10 +3,11 @@
  * Module dependencies.
  */
 
-var express = require('express')
-  , linking = require('./routes/linking')
-  , http = require('http')
-  , path = require('path');
+var express = require('express'),
+  linking = require('./routes/linking'),
+  http = require('http'),
+  path = require('path'),
+  nowServerSide = require("./nowServerSide/nowServerSide.js");
 
 var app = express();
 
@@ -33,6 +34,7 @@ app.configure('development', function(){
 });
 
 
+
 var links = linking.getAllLinks();
 for (var i = 0; i < links.length; i++) {
   app.all(links[i].href, links[i].routingFunc);
@@ -41,3 +43,6 @@ for (var i = 0; i < links.length; i++) {
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
+
+
+nowServerSide.setupServerSideNowFunctions(app);

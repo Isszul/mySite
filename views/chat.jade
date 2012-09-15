@@ -1,0 +1,34 @@
+extends layout
+
+
+block scripts
+
+  script(src="/nowjs/now.js")
+
+  script(type="text/javascript", src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js")
+
+  script
+  	$(document).ready(function(){
+
+	  now.receiveMessage = function(name, message){
+	    $("#messages").append("<br>" + name + ": " + message);
+	  }
+
+	  $("#send-button").click(function(){
+	    now.distributeMessage($("#text-input").val());
+	    $("#text-input").val("");
+	  });
+
+	  now.name = prompt("What's your name?", "");
+
+  	});
+
+block content
+  h1= title
+
+  div(id="messages")
+
+  input(type="text", id="text-input")
+
+  input(type="button", value="Send", id="send-button")
+

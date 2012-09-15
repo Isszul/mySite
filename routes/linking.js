@@ -2,17 +2,19 @@
  * Controls the application links
  */
 
-  var index = require('./index')
-  , blog = require('./blog')
-  , vimrc = require('./vimrc')
-  , reload = require('./reload')  
-  , user = require('./user')   
-  , utils = require('./utils')   
-  , viewlog = require('./viewlog');
+  var index = require('./index'),
+    blog = require('./blog'),
+    vimrc = require('./vimrc'),
+    reload = require('./reload'),
+    chat = require('./chat'),
+    user = require('./user'),   
+    utils = require('./utils'),
+    viewlog = require('./viewlog');
 
 var sidemenulinks =  [
   {name: 'Main Page', href: '/', routingFunc: index.index},
   {name: 'My Blog', href: '/blog', routingFunc: blog.blog},
+  {name: 'Chat', href: '/chat', routingFunc: chat.chat},
   {name: 'Vimrc', href: '/vimrc', routingFunc: vimrc.vimrc},
   {name: 'Login', href: '/login', routingFunc: user.login}
 ];
